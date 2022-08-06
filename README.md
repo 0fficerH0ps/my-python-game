@@ -6,7 +6,7 @@ Join our heros on their quest to defeat the never ending alien invasion.
 How long can you survive?
 
 
-You will need Python 3 (or above) and Pygame to play the game.
+You will need Python 3.6 (or above) and Pygame to play the game.
 
 
 Installing Python:
@@ -42,6 +42,3 @@ If you use a command other than python to run programs or start ata terminal ses
 $python3 -m pip install --user pygame
 
 If the command doesn't work on macOS, try running the command again without the --user flag.
-
-Downloading the game:
-alien_invasion.py
