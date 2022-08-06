@@ -10,7 +10,7 @@ class Scoreboard:
         """Initalize scorekeeping attributes."""
         self.ai_game = ai_game
         self.screen = ai_game.screen
-        self.screen_rect = self.scree.get_rect()
+        self.screen_rect = self.screen.get_rect()
         self.settings = ai_game.settings
         self.stats = ai_game.stats
 
@@ -65,8 +65,8 @@ class Scoreboard:
         for ship_number in range(self.stats.ships_left):
             ship = Ship(self.ai_game)
             ship.rect.x = 10 + ship_number * ship.rect.width
-            ship.rect.y =10
-            ship.ships.add(ship)
+            ship.rect.y = 10
+            self.ships.add(ship)
 
     def check_high_score(self):
         """Check to see if there's a new high score."""
