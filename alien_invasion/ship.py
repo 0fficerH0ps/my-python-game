@@ -5,6 +5,7 @@ class Ship:
 
     def __init__(self, ai_game):
         """Initalize the ship and set its position."""
+        super().__init__()
         self.screen = ai_game.screen
         self.settings = ai_game.settings
         self.screen_rect = ai_game.screen.get_rect()
@@ -35,7 +36,7 @@ class Ship:
         self.rect.x = self.x
 
     def blitme(self):
-        """Draw the ship at its current location."""
+        """Draw the ship at its current location.""" 
         self.screen.blit(self.image, self.rect)
 
     def center_ship(self):
